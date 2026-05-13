@@ -30,9 +30,12 @@ commonPrompt/
 │   ├── tech-design/            # 技术设计类
 │   │   ├── tech-design-guide.md
 │   │   └── tech-design-guide_prompt.md
-│   └── testing/                # 测试相关类
-│       ├── unit-test-generator.md
-│       └── unit-test-generator_prompt.md
+│   ├── testing/                # 测试相关类
+│   │   ├── unit-test-generator.md
+│   │   └── unit-test-generator_prompt.md
+│   └── skill-safety/           # SKILL 安全防护类
+│       ├── skill-safety-guard.md
+│       └── skill-safety-guard_prompt.md
 │
 └── README.md                     # 项目说明文档
 ```
@@ -75,6 +78,12 @@ commonPrompt/
 |------------|----------|----------|
 | [unit-test-generator](./prompts/testing/unit-test-generator.md) | 单元测试用例生成 | 补齐测试覆盖、测试驱动开发 |
 
+### SKILL 安全防护 (skill-safety)
+
+| Prompt 名称 | 功能说明 | 适用场景 |
+|------------|----------|----------|
+| [skill-safety-guard](./prompts/skill-safety/skill-safety-guard.md) | SKILL 调用安全防护规则 | 规范 AI Agent 高风险操作行为 |
+
 ## 快速导航
 
 | 你想做什么？ | 使用哪个 Prompt？ |
@@ -85,6 +94,7 @@ commonPrompt/
 | 设计 API 接口 | [api-design-guide](./prompts/api-design/api-design-guide.md) |
 | 设计技术方案 | [tech-design-guide](./prompts/tech-design/tech-design-guide.md) |
 | 生成单元测试 | [unit-test-generator](./prompts/testing/unit-test-generator.md) |
+| 规范高风险操作 | [skill-safety-guard](./prompts/skill-safety/skill-safety-guard.md) |
 
 ## 使用规范
 
@@ -140,6 +150,11 @@ commonPrompt/
 - [ ] 适配主流 AI 模型
 
 ## 更新日志
+
+### v1.1.0 (2026-05-13)
+
+- 新增 SKILL 安全防护 (skill-safety) 分类
+- 添加 skill-safety-guard：规范 AI Agent 高风险操作行为
 
 ### v1.0.0 (2026-05-13)
 
